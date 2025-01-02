@@ -1,0 +1,136 @@
+
+@import url(./css/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+@import url(./css/fonts/gilroy/Gilroy-Light.ttf);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #21093A;
+    font-family: 'Gilroy-Light', sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerOptions ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.headerOptions ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+.headerOptions ul li a:hover,
+.headerOptions ul li a.active {
+    color: #961975;
+}
+
+.cta-headerBtn {
+    padding: 10px 20px;
+    background-color: #961975;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-headerBtn:hover {
+    background-color: #7d125c;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    text-align: left;
+    background-color: #21093A;
+    color: #fff;
+}
+
+.heroWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.heroContent {
+    max-width: 720px;
+    margin-right: 30px;
+}
+
+.heroContent h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 76px;
+    height: 76px;
+    border-radius: 12px;
+    transform: rotate(-5deg);
+    margin-bottom: 30px;
+}
+
+.heroContent p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Gilroy-Light', sans-serif;
+    margin-bottom: 50px;
+}
+
+
+.heroImageBlock {
+    max-width: 680px;
+    text-align: center;
+}
+
+.heroImage {
+    width: 100%; 
+    max-width: 680px; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.heroImageText {
+    font-size: 18px;
+    font-family: 'Gilroy-Light', sans-serif;
+    line-height: 1.4;
+}

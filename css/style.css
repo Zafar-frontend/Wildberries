@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    width: 1920px;
+    background-color: #21093A;
+
+}
+
+.header{
+width: 1180px;
+Height: 54px;
+font-weight: 400;
+Top: 20px;
+Left: 370px;
+border: 1px;
+font-size: 18px;
+text-transform: lowercase;
+text-align: center;
+color: #fff;
+margin-bottom: 0 80px;
+
+}
+
+.headerWrapper {
+ 
+
+   
+    padding: 20px;
+    Width: 1180px;
+   
+   }
+.heroImage{
+    Width:76.32px;
+    Height:76.32px;
+    border-radius: 12px;
+    rotate: -5.23°;
+}
+.headerContainer{
+    width: 720px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #fff; /* Цвет при наведении */
+}
+
+/* Кнопка действия */
+.cta-button {
+    background-color: #961975; /* Жёлтая кнопка (можно заменить на нужный цвет) */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #961975; /* Цвет кнопки при наведении */
+}
+.hero-section{
+
+}
