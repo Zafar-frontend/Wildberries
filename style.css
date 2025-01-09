@@ -1,136 +1,895 @@
-
 @import url(./css/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
 @import url(./css/fonts/gilroy/Gilroy-Light.ttf);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: #21093A;
-    font-family: 'Gilroy-Light', sans-serif;
-    color: #fff;
+  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 400;
 }
-
 .container {
-    width: 1180px;
-    margin: 0 auto;
+  width: 1180px;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
-
 /* Header */
-.header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    background: transparent;
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  background: transparent;
+  background-color: #21093a;
 }
-
 .headerWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-
 .headerOptions ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
-
 .headerOptions ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: lowercase;
-    transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: lowercase;
+  transition: 0.3s ease;
 }
-
-.headerOptions ul li a:hover,
-.headerOptions ul li a.active {
-    color: #961975;
+.headerButton {
+  padding: 10px 20px;
+  border: 1px solid #961975;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
-
-.cta-headerBtn {
-    padding: 10px 20px;
-    background-color: #961975;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+header input {
+  display: none;
 }
-
-.cta-headerBtn:hover {
-    background-color: #7d125c;
+header label {
+  font-size: 30px;
+  color: #E1016E;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  float: right;
 }
-
+/* header end */
+/* hero start */
 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  height: auto;
+  background-color: #21093a;
+  color: #fff;
+  overflow: hidden;
+}
+.hero {
+  background-image: url(./images/Ellipse\ 5.png);
+  background-repeat: no-repeat;
+  background-position: 1100px 0;
+}
+.ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  font-size: calc(1.9vw + 13px); /*35-20 */
+  font-weight: 300;
+  font-family: "Dela Gothic One", sans-serif;
+  line-height: 130%;
+  margin-top: 80px;
+  margin-bottom: 20px 30px;
+}
+#logo {
+  width: calc(5.3vw + 13px);
+  height: calc(5.3vw + 13px);
+  border-radius: calc(0.6vw + 4.7px);
+  rotate: (-5deg);
+}
+.heroWrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+}
+.heroContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 30px;
+}
+.heroContent p {
+  font-size: calc(1.1vw + 10.8px);
+  /* font-weight: 400; */
+  margin-bottom: 50px 90px;
+  /* text-transform: lowercase; */
+}
+.heroCourse {
+  /* width: 100%; */
+}
+.heroCourseInfo {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.courseItem {
+  margin-top: 40px;
+  /* display: flex;
+ flex-wrap: wrap; */
+  text-align: center;
+  margin-right: 16px 40px;
+}
+.courseItem .title {
+  font-size: calc(0.7vw + 9.2px);
+  font-weight: 400;
+  color: #fff;
+  /* font-family: "Gilroy-Light", sans-serif; */
+}
+.courseItem .subtitle {
+  font-size: calc(0.6vw + 13.7px); /*24-18 */
+  font-weight: 300;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #fff;
+}
+.heroImageBlock {
+  width: 50%;
+}
+.heroImage {
+  position: absolute;
+  left: 700px;
+  top: 150px;
+  /* width: 1000px;
+  height: 1000px; */
+}
+.heroImageTextCard {
+  background-color: #961975;
+  width: 275px;
+  position: absolute;
+  bottom: 400px;
+  right: 370px;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.heroImageText {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.cta .primary {
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: linear-gradient(to right,
+      rgba(229, 0, 109, 1),
+      rgba(201, 1, 113, 1),
+      rgba(150, 25, 117, 1),
+      rgba(111, 31, 120, 1),
+      rgba(86, 32, 122, 1),
+      rgba(76, 33, 122, 1));
+  color: #ffffff;
+  margin-top: 90px;
+  margin-right: 20px;
+  margin-bottom: 143px;
+}
+.cta .secondary {
+  width: 159px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #961975;
+  background-color: #21093a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* hero end */
+/* applicants start */
+.applicants {
+  
+}
+.applicantsWrapper {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: calc(0.6vw + 17.7px); /*30-20 */
+  font-weight: 400;
+  color: #4c217a;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.applicantsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  gap: calc(0.5vw + 14px);
+  border: 3px #f4f2fd;
+  border-radius: calc(1vw + 4.2px);
+  box-shadow: 5px 10px 10px #3003351a;
+  margin-bottom: 20px;
+  width: 45%;
+}
+.applicantsBlock h3 {
+  font-size: 18px; /*24-18 */
+  font-weight: 300;
+  color: #4c217a;
+  font-family: "Dela Gothic One", sans-serif;
+}
+.applicantsContent p {
+  max-width: 640px;
+  min-width: 288px;
+  font-size: calc(0.5 + 12px); /*18-14 */
+  font-weight: 400;
+  line-height: 130%;
+  
+}
+.applicantsBlock2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  gap: calc(0.5vw + 14px);
+  border: 3px #f4f2fd;
+  border-radius: calc(1vw + 4.2px);
+  box-shadow: 5px 10px 10px #3003351a;
+  margin-bottom: 20px;
+}
+.applicantsBlock2 h3 {
+  font-size: 18px; 
+  font-weight: 400;
+  color: #4c217a;
+  font-family: "Dela Gothic One", sans-serif;
+}
+.applicantsinfo p {
+  max-width: 440px;
+  min-width: 288px;
+  font-size: calc(0.5 + 12px); /*18-14 */
+  font-weight: 400;
+  line-height: 130%;
+  
+}
+.applicantsBlock.specialists.managers {
+  max-width: calc(44.7vw + 152px);
+  height: calc(9.9vw - 357px);
+  margin: 0;
+}
+.applicantsBlock2.sellers.beginers {
+  max-width: calc(19.9vw + 245px);
+  height: calc(9.9vw - 357px);
+  margin: 0;
+}
+.forIMG {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* applicants end */
+/* courseInfo start */
+.courseInfo {
+  /* width: 1380px; */
+  /* margin: 0 auto; */
+  background-color: #21093a;
+  border-radius: 20px;
+  margin-top: 80px;
+  padding: 10px 40px;
+}
+.courseInfoTitle h2 {
+  display: flex;
+ 
+  font-size: calc(1.2vw + 15.3px); /*35-20 */
+  font-weight: 400;
+  padding-top: 50px;
+  margin-bottom: calc(1.2vw + 25.3px);
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Dela Gothic One", sans-serif;
+}
+.courseWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  color: #fff;
+
+}
+.courseBlock {
+  border-radius: calc(1vw + 4.3px); /*16-8 */
+  border: 1px solid #e1016e;
+  padding: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-image: url(./images/Ellipse.png);
+  background-repeat: no-repeat;
+  
+}
+.courseBlock h3 {
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 400;
+  margin-bottom: calc(1.7vw + 9.5px);
+  font-family: "Dela Gothic One", sans-serif;
+}
+.courseInfoTitle p ul li {
+  font-size: calc(0.5 + 12px); /*18-14 */
+  font-weight: 400;
+  line-height: 130%;
+  list-style-type: none;
+  font-family: "Gilroy-Light" sans-serif;
+}
+.courseWrapper2 {
+  display: flex;
+  color: #fff;
+  padding-bottom: 63px;
+ }
+
+/* courseInfo end */
+
+
+/* request start */
+.requestWrapper {
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:start;
+  background-color: #21093a;
+  background-image: url(./images/Ellipse3.png);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+} 
+.requestLeft {
+  width: 50%;
+  align-items: center;
+  width: calc(12.4vw + 233px);
+}
+.requestLeft h2 {
+  font-size: calc(1.2vw + 15.3px); /*35-20 */
+  font-weight: 400;
+  line-height: 140%;
+  color: #ffffff;
+  font-family: "Dela Gothic One", sans-serif;
+}
+.requestLeft span {
+  margin-top: calc(16px + (10 - 16) * ((100vw - 375px) / (1180 - 375)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1180 - 375)));
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #ffffff;
+  width: calc(12.4vw + 233px);
+}
+.requestRight {
+  width: 50%;
+}
+.requstForm input {
+  margin-top: 20px;
+  display: block;
+  font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1180 - 375)));
+  width: calc(12.4vw + 233px);
+  background-color:#21093a;
+  padding-bottom:  20px;
+  border: 0;
+  border-bottom: 1px solid #E1016E;
+}
+.requstForm button {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  width: calc(12.4vw + 233px);
+  height: 60px;
+  background: linear-gradient(to right,
+      rgba(229, 0, 109, 1),
+      rgba(201, 1, 113, 1),
+      rgba(150, 25, 117, 1),
+      rgba(111, 31, 120, 1),
+      rgba(86, 32, 122, 1),
+      rgba(76, 33, 122, 1));
+  color: #ffffff;
+  border-radius: 10px;
+}
+.requstForm p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 130%;
+  width: calc(12.4vw + 233px);
+}
+/* request end */
+/*tariffs start*/
+.tariffs {
+  background-color: #f4f2fd;
+}
+
+.tariffsTitle {
+  font-size: calc(1.2vw + 15.3px); /*35-20 */
+  font-weight: 400;
+  color: #4c217a;
+  text-transform: uppercase;
+  padding-top: calc(6.2vw + 6.7px);
+  margin-bottom: calc(1.2vw + 25.3px);
+  font-family: "Dela Gothic One", sans-serif;
+}
+.tariffsCard {
+  width: calc(12.4vw + 233px);
+  border: 1px;
+  border-color: #f2f2f2;
+  border-radius: calc(1vw + 4.3px); /*16-8*/
+  padding: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.tariffsCard h3 {
+  text-transform: uppercase;
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  color: #4c217a;
+  margin-bottom: 10px;
+}
+
+.weeksBtn {
+  width: calc(2vw + 71.6px);
+  font-size: calc(0.5vw + 10px); /*16-12*/
+  font-weight: 400;
+  border-radius: 20px;
+  background-color: #4c217a;
+  color: #ffffff;
+  margin-bottom: calc(2.2vw + 3.6px); /*30-12*/
+}
+
+.tariffsCard ul {
+  gap: calc(1vw + 8.3px); /*20-12*/
+  text-align: left;
+}
+
+.tariffsCard h4 {
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 600;
+  color: #4c217a;
+  margin-bottom: calc(1vw + 4.3px); /*16-8*/
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tariffsCard ul li {
+  font-size: calc(0.5vw + 12px); /*18-14*/
+  font-weight: 400;
+  line-height: 130%;
+  list-style-type: square;
+  text-transform: lowercase;
+  margin-bottom: 14px;
+  /* text-align: start; */
+}
+
+.tariffsCard .priceBtn {
+  width: calc(2.1vw + 163px);
+  height: calc(0.4vw + 49.6px);
+  border: 1px solid #E1016E;
+  border-radius: 10px;
+  margin-top: calc(0.7vw + 21px);
+  margin-bottom: calc(0.6vw + 25.7px);
+}
+
+.tariffsCard3 {
+  width: calc(12.4vw + 233px);
+  border-radius: calc(1vw + 4.3px); /*16-8*/
+  padding: 30px;
+  background-color: #21093a;
+  color: #ffffff;
+  text-align: center;
+  background-image: url(./images/Ellipse\ 6.png);
+  background-repeat: no-repeat;
+}
+
+.tariffsCard3 h3 {
+  text-transform: uppercase;
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.priceBtn1 {
+  width: calc(2.1vw + 163px);
+  height: calc(0.4vw + 49.6px);
+  border: 1px;
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+.tariffsCard3 ul {
+  gap: calc(1vw + 8.3px); /*20-12*/
+  text-align: left;
+}
+
+.tariffsCard3 h4 {
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: calc(1vw + 4.3px); /*16-8*/
+  text-align: left;
+}
+
+.tariffsCard3 ul li {
+  font-size: calc(0.5vw + 12px); /*18-14*/
+  font-weight: 400;
+  line-height: 130%;
+  list-style-type: square;
+  text-transform: lowercase;
+  margin-bottom: 14px;
+  text-align: start;
+}
+
+.monthsBtn {
+  width: calc(2vw + 71.6px);
+  font-size: calc(0.5vw + 10px); /*16-12*/
+  font-weight: 400;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #21093a;
+  margin-bottom: calc(2.2vw + 3.6px); /*30-12*/
+}
+
+/*tariffs end*/
+/*results start*/
+.results {
+  
+}
+.resultsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.resultsLeft {
+  width: 50%;
+  align-items: center;
+}
+.resultsTitle {
+  text-transform: uppercase;
+  font-size: calc(2.5vw + 10.7px); /*40-20 */
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 800;
+  margin-bottom: calc(1.2vw + 25.3px); /*40-30*/
+}
+.resultsSlide h3 {
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #21093A;
+  margin-bottom: calc(1.2vw + 25.3px);
+}
+.resultsLeft ul li {
+  margin-bottom:calc(1vw + 8.3px) ;
+  list-style-type: square;
+  font-size: calc(0.5vw + 12px); /*18-14*/
+  font-weight: 400;
+  line-height: 130%;
+}
+.resultsRight {
+  width: 50%;
+}
+.resultImages{
+  text-align: center;
+}
+.DiagImg {
+  width: 960px;
+}
+
+/*results end*/
+
+/*accordtion start*/
+.accordion {
+  max-width: 600px;
+  margin: auto;
+}
+.questions h2{
+  font-size: calc(1.2vw + 15.3px); /*35-20 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #21093A;
+}
+.accordion-item {
+  border: 1px solid #E1016E;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: calc(0.7vw + 15.2px); /*24-18 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #21093A;
+  background-color: #ffffff;
+  cursor: pointer;
+  
+}
+
+.accordion-header:hover {
+  background-color: #ffffff;
+}
+
+.toggle-icon {
+  font-size: calc(0.5vw + 12px); /*18-14*/
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  background-color: #ffffff;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+/*accordtion end*/
+
+/*diagostics start */
+.diagnostics{
+
+}
+.diagnosticsWrapper {
+  padding: 20px 100px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#21093a;
+  /* align-items: center; */
+  background-image: url(./images/Ellipse7.png);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 30px 100px;
+} 
+.diagnosticsLeft {
+  width: 50%;
+  align-items: center;
+  width: calc(12.4vw + 233px);
+  
+}
+.diagnosticsLeft h2 {
+  margin-top: 0;
+  
+  font-size: calc(1.2vw + 15.3px); /*35-20 */
+  font-weight: 400;
+  line-height: 140%;
+  color: #ffffff;
+  font-family: "Dela Gothic One", sans-serif;
+}
+.diagnosticsLeft p {
+  margin-top: calc(16px + (10 - 16) * ((100vw - 375px) / (1180 - 375)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1180 - 375)));
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #ffffff;
+  width: calc(12.4vw + 233px);
+  
+}
+.diagnosticsRiht {
+  width: 50%;
+}
+.dianosticsForm input {
+  margin-top: 20px;
+  display: block;
+  font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1180 - 375)));
+  width: calc(12.4vw + 233px);
+  background-color:#21093a;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border: 0;
+  border-bottom: 1px solid #E1016E;
+}
+.dianosticsForm button {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  width: calc(12.4vw + 233px);
+  height: 60px;
+  background: linear-gradient(to right,
+      rgba(229, 0, 109, 1),
+      rgba(201, 1, 113, 1),
+      rgba(150, 25, 117, 1),
+      rgba(111, 31, 120, 1),
+      rgba(86, 32, 122, 1),
+      rgba(76, 33, 122, 1));
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.dianosticsForm p {
+ margin-top: 12px;
+ width: calc(12.4vw + 233px);
+ font-size: 12px;
+ line-height: 130%;
+ color: #ffffff;
+ 
+}
+
+.dianosticsForm span {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 130%;
+  width: calc(12.4vw + 233px);
+  margin-bottom: calc(4.5vw + 13.2px);
+}
+/* dianostics end */
+/* footer start */
+.contacts {
+  background-color: #21093A;
+}
+.footerWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-top: calc(3.7vw + 16px);
+  padding-bottom: 170px;
+}
+.footerWrapper h3 {
+  
+  /* text-transform: uppercase; */
+  font-size: 14px; /*24-18 */
+  font-weight: 400;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #ffffff;
+}
+.footerWrapper p {
+  margin-top: 12px;
+  font-size: 12px; /*24-18 */
+  font-weight: 400;
+  color: #ffffff;
+}
+/* fotter end */
+
+@media (max-width: 1180px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+
+@media (max-width: 900px) {
+.container{
+  width: 800px;
+}
+
+/* .heroImage{
+  width: unset;
+  height: unset;
+  margin-left: 0;
+  position: static;
+} */
+
+  /* .container {
+    width: 360px;
+  } */
+   .requestWrapper{
+    display: block;
+   }
+  .headerWrapper {
+    display: none;
+  }
+
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .forIMG {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .CourseWrapper {
+    display: block;
+  }
+
+  .CourseWrapper2 {
+    display: block;
+  }
+  .hero{
+    background-image:none;
+  }
+  .heroImageTextCard {
+    display: none;
+  }
+  .heroCourse {
+    display: block;
+  }
+  .heroImage{
+    display: none;
+  }
+  
+  .primary {
+    width: 320px;
+  }
+  .secondary {
+    display: none;
+  }
+
+  .applicants {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .applicantsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    height: 750px;
-    text-align: left;
-    background-color: #21093A;
-    color: #fff;
+
+  }
+  .applicantsBlock {
+    width: 100%;
+  }
+ .DiagImg{
+  width: 320px;
+ } 
+
+.resultsWrapper{
+  display: block;
+}
+.tariffsCard{
+  width: 280px;
+  align-items: center;
+}
+.tariffsCard3{
+  width: 280px;
+}
+.footerWrapper{
+  display: block;
+}
+/* 
+  .courseWrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  } */
 }
 
-.heroWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.heroContent {
-    max-width: 720px;
-    margin-right: 30px;
-}
-
-.heroContent h1 {
-    font-size: 50px;
-    font-weight: 400;
-    font-family: 'Dela Gothic One', sans-serif;
-    margin-bottom: 20px;
-}
-
-.logo {
-    width: 76px;
-    height: 76px;
-    border-radius: 12px;
-    transform: rotate(-5deg);
-    margin-bottom: 30px;
-}
-
-.heroContent p {
-    font-size: 24px;
-    font-weight: 500;
-    font-family: 'Gilroy-Light', sans-serif;
-    margin-bottom: 50px;
-}
+@media (max-width: 800px) {
+  .container{
+    width: 700px;
+  }}
 
 
-.heroImageBlock {
-    max-width: 680px;
-    text-align: center;
-}
+@media (max-width: 780px){
+  .courseWrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-.heroImage {
-    width: 100%; 
-    max-width: 680px; 
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.heroImageText {
-    font-size: 18px;
-    font-family: 'Gilroy-Light', sans-serif;
-    line-height: 1.4;
+  .applicantsWrapper {
+    grid-template-columns:  1fr;
+  }
 }

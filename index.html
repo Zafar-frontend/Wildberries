@@ -1,79 +1,466 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Наставничество по WB</title>
-    <link rel="stylesheet" href="./css/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf">
-    <link rel="stylesheet" href="./css/fonts/gilroy/Gilroy-Light.ttf">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="headerWrapper">
-                <nav class="headerOptions">
-                    <ul>
-                        <li><a href="#">Для кого</a></li>
-                        <li><a href="#">Формат</a></li>
-                        <li><a href="#" class="active">Программа</a></li>
-                        <li><a href="#">Тарифы</a></li>
-                        <li><a href="#">О спикере</a></li>
-                        <li><a href="#">Вопросы</a></li>
-                    </ul>
-                </nav>
-                <div class="headerBtn">
-                    <a href="#" class="cta-headerBtn">Оставить заявку</a>
-                </div>
-            </div>
+    <link rel="stylesheet" href="./css/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf"/>
+    <link rel="stylesheet" href="./css/fonts/gilroy/Gilroy-Light.ttf"/>
+    <link rel="stylesheet" href="./splide-4.1.3/splide-4.1.3/dist/css/splide.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/8490aad7b1.js" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+    <header>
+      <div class="container contentWidth">
+        <div class="headerWrapper">
+          <nav class="headerOptions">
+            <ul>
+              <li><a href="#" class="active">Для кого</a></li>
+              <li><a href="#">Формат</a></li>
+              <li><a href="#">Программа</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">О спикере</a></li>
+              <li><a href="#">Вопросы</a></li>
+            </ul>
+          </nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkBtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="headerBtn">
+            <a href="#" class="headerButton">Оставить заявку</a>
+          </div>
         </div>
+      </div>
+
+      <div class="ellipse">
+        <img src="./images/Ellipse 2.png" alt="" />
+      </div>
     </header>
-    
+
     <section class="hero">
-        <div class="container">
-            <div class="heroWrapper">
-               
-                <div class="heroContent">
-                    <h1 class="heroTitle">Групповое наставничество по продажам на</h1>
-                    <img class="logo" src="./images/wb.png" alt="Логотип Wildberries">
-                    <p>Помогаю выйти на оборот от 1 000 000 ₽ в месяц</p>
-                </div>
-    
-                
-                <div class="heroCourse">
-                    <div class="heroCourseInfo">
-                        <div class="courseItem">
-                            <div class="title">Старт</div>
-                            <div class="subtitle">15 АПРЕЛЯ</div>
-                        </div>
-                        <div class="courseItem">
-                            <div class="title">Длительность</div>
-                            <div class="subtitle">2 МЕСЯЦА</div>
-                        </div>
-                        <div class="courseItem">
-                            <div class="title">Формат</div>
-                            <div class="subtitle">ОНЛАЙН</div>
-                        </div>
-                        <div class="courseItem">
-                            <div class="title">Лично отбираю участников</div>
-                            <div class="subtitle">15 МЕСТ</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="heroImageBlock">
-                    <img class="heroImage" src="./images/user_img.png" alt="Сергей Поталинский">
-                    <p class="heroImageText">наставник по маркетплейсам Сергей Поталинский</p>
-                </div>
+      <div class="container">
+        <div class="heroWrapper">
+          <div class="heroWrapper2">
+            <div class="heroContent">
+              <h1 class="heroTitle">ГРУПОВОЕ НАСТАВНИЧЕСТВО ПО ПРОДАЖАМ НА</h1>
+              <div id="logo">
+                <img src="./images/wb.png" alt="WB" />
+              </div>
+              <p>Помогаю выйти на оборот от 1 000 000 ₽ в месяц</p>
             </div>
-    
-          
-            <div class="cta">
+
+            <div class="heroCourse">
+              <div class="heroCourseInfo">
+                <div class="courseItem">
+                  <div class="title">Старт</div>
+                  <div class="subtitle">15 АПРЕЛЯ</div>
+                </div>
+                <div class="courseItem">
+                  <div class="title">Длительность</div>
+                  <div class="subtitle">2 МЕСЯЦА</div>
+                </div>
+                <div class="courseItem">
+                  <div class="title">Формат</div>
+                  <div class="subtitle">ОНЛАЙН</div>
+                </div>
+                <div class="courseItem">
+                  <div class="title">Лично отбираю участников</div>
+                  <div class="subtitle">15 МЕСТ</div>
+                </div>
+              </div>
+              <div class="cta">
                 <button type="button" class="primary">Принять участие</button>
                 <button type="button" class="secondary">Программа</button>
+              </div>
             </div>
+          </div>
+          <div class="heroImageBlock">
+            <img
+              class="heroImage" src="./images/user_img.png" alt="Сергей Поталинский"/>
+            <div class="heroImageTextCard">
+              <p class="heroImageText">наставник по маркетплейсам</p>
+              <p>Сергей Поталинский</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+
+  <section class="applicants container">
+    <h2>Кому подойдёт наставничество</h2>
+    <div class="applicantsWrapper container">
+      <div class="applicantsBlock">
+        <div class="specialists">
+          <div class="forIMG">
+            <img src="./images/usd.png" alt="" />
+          </div>
+          <h3>Специалистам</h3>
+        </div>
+        <div class="applicantsContent">
+          <p>
+            Продавцам, которые вышли на ежемесячные обороты 200–600 тыс. руб.
+            и хотят вырасти до 1 000 000 руб/мес
+          </p>
+        </div>
+      </div>
+      <div class="applicantsBlock">
+        <div class="sellers">
+          <div class="forIMG">
+            <img src="./images/diagram.png" alt="" />
+          </div>
+          <h3>Начинающим селлерам</h3>
+        </div>
+        <div class="applicantsinfo">
+          <p>
+            Продавцы, которые только начали и делают ежемесячный оборот
+            до 200 тыс. руб.
+          </p>
+        </div>
+      </div>
+      <div class="applicantsBlock2">
+        <div class="beginers">
+          <div class="forIMG">
+            <img src="./images/hat.png" alt="" />
+          </div>
+          <h3>Новичкам</h3>
+        </div>
+        <div class="applicantsinfo">
+          <p>
+            Тем, кто прошёл курсы по WB и запустил продажи, но не получил
+            результаты
+          </p>
+        </div>
+      </div>
+      <div class="applicantsBlock">
+        <div class="managers">
+          <div class="forIMG">
+            <img src="./images/smile.png" alt="" />
+          </div>
+          <h3>Менеджерам</h3>
+        </div>
+        <div class="applicantsContent">
+          <p>
+            Тем, кто ведёт кабинеты продавцов и хочет повысить экспертность
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+<section class="courseInfo container">
+  <div class="courseInfoTitle">
+    <h2>как проходит обучение</h2>
+  </div>
+  <div class="courseWrapper">
+    <div class="courseBlock">
+      <h3>8 созвонов</h3>
+      <p>
+        В течение 2 месяцев каждую неделю проводим созвон, на котором
+        мы разбираем:
+      </p>
+      <ul>
+        <li>1.Уроки с материалами курса</li>
+        <li>2.Результаты участников созвона</li>
+        <li>3.Домашние задания</li>
+        <li>4.Ваши вопросы</li>
+      </ul>
+    </div>
+    <div class="courseBlock">
+      <h3>Домашние задания</h3>
+      <p>
+        После урока вы получаете домашние задания, которые помогут
+        на практике закрепить знания
+      </p>
+    </div>
     
-</body>
+    <div class="courseBlock">
+        <h3>Записи созвонов</h3>
+        <p>
+            Вы может посмотреть уроки в удобное время. Каждый участник получит
+            доступ к записям Zoom-созвонов.
+        </p>
+    </div>
+    <div class="courseBlock">
+        <h3>Общий чат</h3>
+        <p>
+            После оплаты вы попадаете в общий чат, где сможете задать свои
+            вопросы, поделиться успехами и просто пообщаться с единомышленниками
+        </p>
+    </div>
+</div>
+</section>
+
+<section class="requstInfo ">
+<div class="container">
+
+  <div class="requestWrapper">
+    
+    <div class="requestLeft">
+      <h2>как стать участником?</h2>
+      <span>Наставничество - формат работы, который не всем подходит. 
+        Поэтому я лично отбираю каждого, с кем будем работать. Отбор 
+        начинается с диагностики вашего бизнеса</span>
+      </div>
+      
+      <div class="requestRight">
+        <form action="" class="requstForm">
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Телефон">
+          <button>Оставить заявку</button>
+          <p>Нажимая на кнопку, вы соглашаетесь с политикой 
+            конфиденциальности и даете согласие на обработку 
+            персональных данных.</p>
+        </form>
+        </div>
+      </div>
+    </div>
+    </section>
+
+<section class="splide tariffs " aria-label="Splide Basic HTML Example">
+  <div class="container">
+
+    <h2 class="tariffsTitle">Тарифы</h2>
+    <div class="splide__track tariffsContainer">
+      <ul class="splide__list">
+        <li class="splide__slide tariffsCard">
+          <h3>Стандарт</h3>
+          <button class="weeksBtn">6 недель</button>
+          <div class="educationInfo">
+            <h4>Обучение</h4>
+            <ul>
+              <li>Модуль № 1: Тестирование спроса и поиск точек роста</li>
+              <li>Модуль № 2: Закупка и продажа</li>
+              <li>Модуль № 3: Маркетинг и клиентский сервис</li>
+              <li id="Modul4">Модуль № 4: Масштабирование</li>
+            </ul>
+          </div>
+          <div class="additionalInfo">
+            <h4>Дополнительно</h4>
+            <ul>
+              <li>База знаний</li>
+              <li>Проверка ДЗ</li>
+              <li>Обратная связь в чате</li>
+            </ul>
+          </div>
+          <button class="priceBtn">Узнать стоимость</button>
+        </li>
+        <li class="splide__slide tariffsCard">
+          <h3>Бизнес</h3>
+          <button class="weeksBtn">8 недель</button>
+          <div class="educationInfo">
+            <h4>Обучение</h4>
+            <ul>
+              <li>Модуль № 1: Тестирование спроса и поиск точек роста</li>
+              <li>Модуль № 2: Закупка и продажа</li>
+              <li>Модуль № 3: Маркетинг и клиентский сервис</li>
+              <li>Модуль № 4: Масштабирование</li>
+            </ul>
+          </div>
+          <div class="additionalInfo">
+            <h4>Дополнительно</h4>
+            <ul>
+              <li>База знаний</li>
+              <li>Проверка ДЗ</li>
+              <li>Обратная связь в чате</li>
+            </ul>
+          </div>
+          <button class="priceBtn">Узнать стоимость</button>
+        </li>
+        
+        <li class="splide__slide tariffsCard3">
+          <h3>VIP</h3>
+          <button class="monthsBtn">3 месяца</button>
+          <div class="educationInfo">
+            <h4>Обучение</h4>
+            <ul>
+              <li>Все модули обучения</li>
+            </ul>
+          </div>
+          <div class="additionalInfo">
+            <h4>Дополнительно</h4>
+            <ul>
+              <li>Личное ведение</li>
+              <li>Вывод на оборот 3 000 000 руб.</li>
+              <li>Работа с моей командой на старте</li>
+              <li>
+                Выстраивание вашей собственной команды, помощь в поиске и
+                найме сотрудников
+              </li>
+            </ul>
+            <button class="priceBtn1">Узнать стоимость</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="splide results" aria-labelledby="carousel-heading">
+  <div class="container resultContent">
+    <div class="resultsWrapper">
+        <div class="resultsLeft">
+          <h2 id="carousel-heading">Наставник - Сергей поталинский</h2>
+          <ul>
+            <li>Селлер с годовым оборотом магазинов более 5 000 000 руб.</li>
+            <li>Наставник по маркетплейсам</li>
+            <li>
+              Один из владельцев интернет-магазина Applepack, в котором мы 
+              с партнёрами сделали оборот более 345 млн. руб. с 2015 года
+            </li>
+          </ul>
+        </div>
+        <div class="resultsRight">
+          <img id="speakerImg" src="./images/img_photo.png" alt="" />
+        </div>
+      </div>
+        
+      <div class="splide__track resultsSlide">
+        <h3>Мои результаты</h3>
+        
+        <ul class="splide__list resultsContent">
+          <li class="splide__slide">
+            <div class="resultImages">
+              <img src="./images/diagram1.png" alt="" class="DiagImg" />
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="resultImages">
+              <img src="./images/diagram2.png" alt="" class="DiagImg" />
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="resultImages">
+              <img src="./images/diagram3.png" alt="" class="DiagImg" />
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+</section>
+
+<section class="questions">
+  <div class="container">
+  <h2>Ответы на вопросы</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Нужен ли бюджет? <span class="toggle-icon">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>У кого-то из вас могут быть уже налажены поставки товаров 
+          на все склады и вам нужно, например, продвижение товаров и 
+          проработка карточек. Кому-то, например, нужен будет поиск 
+          товаров и аналитика и только потом этап закупки товаров и 
+          поставка.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Смогу ли я найти новые товары для продажи? <span class="toggle-icon">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Content for Section 2</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Как понять, будет ли полезно это наставничество лично мне? <span class="toggle-icon">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Content for Section 3</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Почему это называется наставничество, а не курс? <span class="toggle-icon">+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Content for Section 4</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="diagnostics">
+  <div class="container">
+    <div class="diagnosticsWrapper">
+      <div class="diagnosticsLeft">
+        <h2>Заявка на диагностику</h2>
+        <p>На диагностике мы обсудим вашу ситуацию и бизнес и вы поймете, 
+          подходит ли вам это наставничество и сколько это стоит</p>
+      </div>
+      <div class="diagnosticsRiht">
+        <form action="" class="dianosticsForm">
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Телефон">
+          <input type="text" placeholder="Удобный способ связи">
+          <input type="text" placeholder="Ваш магазин на WB">
+          <p>Укажите ИП, название или ссылку (если нет — оставьте поле пустым)</p>
+          <button>Оставить заявку на диагностику</button>
+          <span>Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности 
+            и даете согласие на обработку персональных данных.</span>
+          </form>
+      </div>       
+    </div>
+  </div>
+</section>
+
+<footer class="contacts ">
+<div class="footerWrapper container">
+  <div>
+<h3>Сергей Поталинский</h3>
+<p>наставник по маркетплейсам</p>
+  </div>
+  <div>
+<h3>Реквизиты</h3>
+<p>ИП Поталинский С.Н.</p>
+<p>ИНН 780632121730</p>
+<p>ОГРН 321784700015882</p>
+  </div>
+  <div>
+<p>Публичная оферта</p>
+<p>Политика конфиденциальности</p>
+  </div>
+</div>
+</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide.tariffs", {
+          perPage: 3,
+          rewind: true,
+          arrows: false,
+          gap: "20px",
+          breakpoints: {
+            900: {
+              perPage: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide.results", {
+          perPage: 1,
+          rewind: true,
+          arrows: true,
+          breakpoints: {
+            900: {
+              perPage: 1,
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+    <script src="./splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
