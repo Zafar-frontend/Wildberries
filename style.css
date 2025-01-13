@@ -13,7 +13,7 @@ body {
 .container {
   width: 1180px;
   margin: 0 auto;
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
   /* padding: calc(42.7vw - 133.66px) calc(3.7vw + 6.8px); */
 }
 /* Header */
@@ -603,7 +603,7 @@ h2 {
 /*results end*/
 
 .accordion {
-  max-width: 360px;
+  /* max-width: 360px; */
   margin: auto;
 }
 
@@ -852,12 +852,12 @@ h2 {
     width: 1100px;
   }
 }
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .container {
     width: 320px;
     margin: 20px 0;
   }
-}
+} */
 
 @media (max-width: 900px) {
 .container{
