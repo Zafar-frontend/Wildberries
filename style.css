@@ -70,7 +70,7 @@ header label {
   flex-wrap: wrap;
   align-items: center;
   /* justify-content: center; */
-  height: auto;
+  /* height: auto; */
   background-color: #21093a;
   color: #fff;
   overflow: hidden;
@@ -91,9 +91,12 @@ h1 {
   font-family: "Dela Gothic One", sans-serif;
   line-height: 130%;
   margin-top: 80px;
-  margin-bottom: 20px 30px;
+  margin-bottom: 30px;
 }
 #logo {
+  position: absolute;
+  left: 970px;
+  top: 280px;
   width: calc(5.3vw + 13px);
   height: calc(5.3vw + 13px);
   border-radius: calc(0.6vw + 4.7px);
@@ -215,7 +218,7 @@ h2 {
   font-size: calc(0.6vw + 17.7px); /*30-20 */
   font-weight: 400;
   color: #4c217a;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 50px;
 }
 .applicantsBlock {
